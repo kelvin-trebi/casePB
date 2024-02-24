@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240224 09:24:57.453" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240224 13:43:18.489" rpa="false" schemaversion="4">
 <suite id="s1" name="Validation Https" source="C:\Users\kelvi\OneDrive\Área de Trabalho\casePB\apiTesting\tests\validation_https.robot">
 <test id="s1-t1" name=" CT01 - Buscar cadastro de um usuário (GET)" line="9">
 <kw name="Create the session" library="base" type="SETUP">
@@ -8,10 +8,10 @@
 <arg>${BASE_URL}</arg>
 <arg>verify=${True}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20240224 09:24:57.865" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20240224 09:24:57.865" endtime="20240224 09:24:57.866"/>
+<msg timestamp="20240224 13:43:19.361" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20240224 13:43:19.361" endtime="20240224 13:43:19.361"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.865" endtime="20240224 09:24:57.866"/>
+<status status="PASS" starttime="20240224 13:43:19.361" endtime="20240224 13:43:19.361"/>
 </kw>
 <kw name="GET em usuário especifico" library="users">
 <kw name="GET On Session" library="RequestsLibrary">
@@ -19,14 +19,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}${2}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:57.964" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.516" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
  path_url=/users/2 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:24:57.964" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.516" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4130', 'Server': 'cloudflare', 'CF-RAY': '85a7b041bdb17a6e-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:18 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19631', 'Server': 'cloudflare', 'CF-RAY': '85a92ab358686508-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 2,
   "name": "Ervin Howell",
@@ -51,10 +51,10 @@
   }
 } 
  </msg>
-<msg timestamp="20240224 09:24:57.965" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:57.867" endtime="20240224 09:24:57.965"/>
+<msg timestamp="20240224 13:43:19.516" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.361" endtime="20240224 13:43:19.516"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.866" endtime="20240224 09:24:57.965"/>
+<status status="PASS" starttime="20240224 13:43:19.361" endtime="20240224 13:43:19.516"/>
 </kw>
 <kw name="Given que a solicitação GET seja feita no ID do user" library="users">
 <kw name="GET em usuário especifico" library="users">
@@ -63,14 +63,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}${2}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:57.983" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.536" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
  path_url=/users/2 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:24:57.983" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.536" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4130', 'Server': 'cloudflare', 'CF-RAY': '85a7b041edce7a6e-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:18 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19631', 'Server': 'cloudflare', 'CF-RAY': '85a92ab3889d6508-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 2,
   "name": "Ervin Howell",
@@ -95,12 +95,12 @@
   }
 } 
  </msg>
-<msg timestamp="20240224 09:24:57.983" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:57.966" endtime="20240224 09:24:57.983"/>
+<msg timestamp="20240224 13:43:19.536" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.518" endtime="20240224 13:43:19.536"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.966" endtime="20240224 09:24:57.995"/>
+<status status="PASS" starttime="20240224 13:43:19.517" endtime="20240224 13:43:19.536"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.966" endtime="20240224 09:24:57.995"/>
+<status status="PASS" starttime="20240224 13:43:19.517" endtime="20240224 13:43:19.536"/>
 </kw>
 <kw name="When obter o código de status do GET da solicitação = 200" library="users">
 <kw name="GET em usuário especifico" library="users">
@@ -109,14 +109,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}${2}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.028" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.581" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
  path_url=/users/2 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:24:58.028" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.581" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4130', 'Server': 'cloudflare', 'CF-RAY': '85a7b0421de37a6e-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19632', 'Server': 'cloudflare', 'CF-RAY': '85a92ab3b8c26508-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 2,
   "name": "Ervin Howell",
@@ -141,20 +141,20 @@
   }
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.028" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:57.995" endtime="20240224 09:24:58.028"/>
+<msg timestamp="20240224 13:43:19.581" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.536" endtime="20240224 13:43:19.581"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.995" endtime="20240224 09:24:58.028"/>
+<status status="PASS" starttime="20240224 13:43:19.536" endtime="20240224 13:43:19.581"/>
 </kw>
 <kw name="Validar status code do GET" library="users">
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:24:58.029" endtime="20240224 09:24:58.029"/>
+<status status="PASS" starttime="20240224 13:43:19.581" endtime="20240224 13:43:19.581"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.028" endtime="20240224 09:24:58.029"/>
+<status status="PASS" starttime="20240224 13:43:19.581" endtime="20240224 13:43:19.581"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.995" endtime="20240224 09:24:58.029"/>
+<status status="PASS" starttime="20240224 13:43:19.536" endtime="20240224 13:43:19.581"/>
 </kw>
 <kw name="Then o response deverá conter as informações do user" library="users">
 <kw name="GET em usuário especifico" library="users">
@@ -163,14 +163,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}${2}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.058" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.613" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
  path_url=/users/2 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:24:58.059" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.613" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4130', 'Server': 'cloudflare', 'CF-RAY': '85a7b0425e027a6e-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19632', 'Server': 'cloudflare', 'CF-RAY': '85a92ab3e8eb6508-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 2,
   "name": "Ervin Howell",
@@ -195,18 +195,18 @@
   }
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.059" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:58.030" endtime="20240224 09:24:58.059"/>
+<msg timestamp="20240224 13:43:19.614" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.583" endtime="20240224 13:43:19.614"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.030" endtime="20240224 09:24:58.059"/>
+<status status="PASS" starttime="20240224 13:43:19.583" endtime="20240224 13:43:19.614"/>
 </kw>
 <kw name="Validar status code do GET" library="users">
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:24:58.059" endtime="20240224 09:24:58.059"/>
+<status status="PASS" starttime="20240224 13:43:19.614" endtime="20240224 13:43:19.614"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.059" endtime="20240224 09:24:58.059"/>
+<status status="PASS" starttime="20240224 13:43:19.614" endtime="20240224 13:43:19.614"/>
 </kw>
 <kw name="Validar se contém user com nome setado" library="users">
 <kw name="GET On Session" library="RequestsLibrary">
@@ -214,14 +214,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}${2}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.089" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.644" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/2 
  path_url=/users/2 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:24:58.089" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
+<msg timestamp="20240224 13:43:19.644" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4131', 'Server': 'cloudflare', 'CF-RAY': '85a7b0428e157a6e-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707308833&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=OdfqVFzp6xaXnlDXBna9j0PzWGMb9oNsaW%2F4Mhg03Es%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707308876', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19632', 'Server': 'cloudflare', 'CF-RAY': '85a92ab419106508-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "id": 2,
   "name": "Ervin Howell",
@@ -246,20 +246,20 @@
   }
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.090" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:58.059" endtime="20240224 09:24:58.090"/>
+<msg timestamp="20240224 13:43:19.644" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.614" endtime="20240224 13:43:19.644"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>Ervin Howell</arg>
 <arg>${RESPOSTA_GET.json()}[name]</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20240224 09:24:58.090" endtime="20240224 09:24:58.090"/>
+<status status="PASS" starttime="20240224 13:43:19.644" endtime="20240224 13:43:19.645"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.059" endtime="20240224 09:24:58.090"/>
+<status status="PASS" starttime="20240224 13:43:19.614" endtime="20240224 13:43:19.645"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.030" endtime="20240224 09:24:58.090"/>
+<status status="PASS" starttime="20240224 13:43:19.583" endtime="20240224 13:43:19.645"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:57.864" endtime="20240224 09:24:58.091"/>
+<status status="PASS" starttime="20240224 13:43:19.360" endtime="20240224 13:43:19.645"/>
 </test>
 <test id="s1-t2" name=" CT02 - Criar um novo usuário (POST)" line="15">
 <kw name="Create the session" library="base" type="SETUP">
@@ -268,18 +268,18 @@
 <arg>${BASE_URL}</arg>
 <arg>verify=${True}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20240224 09:24:58.094" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20240224 09:24:58.093" endtime="20240224 09:24:58.094"/>
+<msg timestamp="20240224 13:43:19.647" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20240224 13:43:19.647" endtime="20240224 13:43:19.648"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.093" endtime="20240224 09:24:58.094"/>
+<status status="PASS" starttime="20240224 13:43:19.647" endtime="20240224 13:43:19.648"/>
 </kw>
 <kw name="Criação de usuário" library="users">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${HEADERS}</var>
 <arg>content-type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20240224 09:24:58.095" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.094" endtime="20240224 09:24:58.095"/>
+<msg timestamp="20240224 13:43:19.649" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:19.649" endtime="20240224 13:43:19.649"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA_POST}</var>
@@ -287,14 +287,14 @@
 <arg>${BASE_URL}</arg>
 <arg>json=${PAYLOAD}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.549" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:19.870" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '424', 'Content-Type': 'application/json'} 
  body=b'{"name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz", "address": {"street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874", "geo": {"lat": "-37.3159", "lng": "81.1496"}}, "phone": "1-770-736-8031 x56442", "website": "hildegard.org", "company": {"name": "Romaguera-Crona", "catchPhrase": "Multi-layered client-server neural-net", "bs": "harness real-time e-markets"}}' 
  </msg>
-<msg timestamp="20240224 09:24:58.549" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:19.870" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=201, reason=Created 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b04359d91f84-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ab4d85b7a85-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Leanne Graham",
   "username": "Bret",
@@ -319,16 +319,16 @@
   "id": 11
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.549" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:58.095" endtime="20240224 09:24:58.549"/>
+<msg timestamp="20240224 13:43:19.870" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.649" endtime="20240224 13:43:19.870"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${HEADERS}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240224 09:24:58.557" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.549" endtime="20240224 09:24:58.557"/>
+<msg timestamp="20240224 13:43:19.870" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:19.870" endtime="20240224 13:43:19.870"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.094" endtime="20240224 09:24:58.557"/>
+<status status="PASS" starttime="20240224 13:43:19.648" endtime="20240224 13:43:19.870"/>
 </kw>
 <kw name="Given que a solicitação POST seja feita" library="users">
 <kw name="Criação de usuário" library="users">
@@ -336,8 +336,8 @@
 <var>${HEADERS}</var>
 <arg>content-type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20240224 09:24:58.557" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.557" endtime="20240224 09:24:58.557"/>
+<msg timestamp="20240224 13:43:19.871" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:19.871" endtime="20240224 13:43:19.871"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA_POST}</var>
@@ -345,14 +345,14 @@
 <arg>${BASE_URL}</arg>
 <arg>json=${PAYLOAD}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.699" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.016" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '424', 'Content-Type': 'application/json'} 
  body=b'{"name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz", "address": {"street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874", "geo": {"lat": "-37.3159", "lng": "81.1496"}}, "phone": "1-770-736-8031 x56442", "website": "hildegard.org", "company": {"name": "Romaguera-Crona", "catchPhrase": "Multi-layered client-server neural-net", "bs": "harness real-time e-markets"}}' 
  </msg>
-<msg timestamp="20240224 09:24:58.699" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.016" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=201, reason=Created 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '998', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b045ab111f84-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '998', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ab5b93b7a85-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Leanne Graham",
   "username": "Bret",
@@ -377,18 +377,18 @@
   "id": 11
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.699" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:58.557" endtime="20240224 09:24:58.699"/>
+<msg timestamp="20240224 13:43:20.016" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:19.871" endtime="20240224 13:43:20.016"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${HEADERS}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240224 09:24:58.699" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.699" endtime="20240224 09:24:58.699"/>
+<msg timestamp="20240224 13:43:20.016" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:20.016" endtime="20240224 13:43:20.016"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.557" endtime="20240224 09:24:58.699"/>
+<status status="PASS" starttime="20240224 13:43:19.871" endtime="20240224 13:43:20.016"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.557" endtime="20240224 09:24:58.699"/>
+<status status="PASS" starttime="20240224 13:43:19.871" endtime="20240224 13:43:20.016"/>
 </kw>
 <kw name="And seja passado o body em JSON com as informações necessárias" library="users">
 <kw name="Criação de usuário" library="users">
@@ -396,8 +396,8 @@
 <var>${HEADERS}</var>
 <arg>content-type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20240224 09:24:58.699" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.699" endtime="20240224 09:24:58.699"/>
+<msg timestamp="20240224 13:43:20.016" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:20.016" endtime="20240224 13:43:20.016"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA_POST}</var>
@@ -405,14 +405,14 @@
 <arg>${BASE_URL}</arg>
 <arg>json=${PAYLOAD}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.846" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.167" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '424', 'Content-Type': 'application/json'} 
  body=b'{"name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz", "address": {"street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874", "geo": {"lat": "-37.3159", "lng": "81.1496"}}, "phone": "1-770-736-8031 x56442", "website": "hildegard.org", "company": {"name": "Romaguera-Crona", "catchPhrase": "Multi-layered client-server neural-net", "bs": "harness real-time e-markets"}}' 
  </msg>
-<msg timestamp="20240224 09:24:58.846" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.167" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=201, reason=Created 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '997', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b0468bb41f84-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '997', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ab6aa177a85-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Leanne Graham",
   "username": "Bret",
@@ -437,18 +437,18 @@
   "id": 11
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.846" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:58.699" endtime="20240224 09:24:58.846"/>
+<msg timestamp="20240224 13:43:20.167" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:20.016" endtime="20240224 13:43:20.167"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${HEADERS}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20240224 09:24:58.846" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.846" endtime="20240224 09:24:58.846"/>
+<msg timestamp="20240224 13:43:20.167" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:20.167" endtime="20240224 13:43:20.167"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.699" endtime="20240224 09:24:58.846"/>
+<status status="PASS" starttime="20240224 13:43:20.016" endtime="20240224 13:43:20.167"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.699" endtime="20240224 09:24:58.846"/>
+<status status="PASS" starttime="20240224 13:43:20.016" endtime="20240224 13:43:20.168"/>
 </kw>
 <kw name="When obter o código de status do POST da solicitação = 201" library="users">
 <kw name="Validar status code" library="users">
@@ -456,8 +456,8 @@
 <var>${HEADERS}</var>
 <arg>content-type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20240224 09:24:58.846" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:58.846" endtime="20240224 09:24:58.846"/>
+<msg timestamp="20240224 13:43:20.169" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:20.169" endtime="20240224 13:43:20.169"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA_POST}</var>
@@ -465,14 +465,14 @@
 <arg>${BASE_URL}</arg>
 <arg>json=${PAYLOAD}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:58.979" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.303" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '424', 'Content-Type': 'application/json'} 
  body=b'{"name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz", "address": {"street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874", "geo": {"lat": "-37.3159", "lng": "81.1496"}}, "phone": "1-770-736-8031 x56442", "website": "hildegard.org", "company": {"name": "Romaguera-Crona", "catchPhrase": "Multi-layered client-server neural-net", "bs": "harness real-time e-markets"}}' 
  </msg>
-<msg timestamp="20240224 09:24:58.979" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.315" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=201, reason=Created 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777498&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Ss5IbqkBT%2Fe6DMdfHfpkfGcxuvK08CxmX9S9dyYeJow%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '996', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b0477c4a1f84-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '996', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ab79adc7a85-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Leanne Graham",
   "username": "Bret",
@@ -497,25 +497,25 @@
   "id": 11
 } 
  </msg>
-<msg timestamp="20240224 09:24:58.979" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:58.846" endtime="20240224 09:24:58.979"/>
+<msg timestamp="20240224 13:43:20.315" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:20.169" endtime="20240224 13:43:20.315"/>
 </kw>
 <kw name="Get Value From Json" library="JSONLibrary">
 <var>${ID_NEW_USER}</var>
 <arg>${RESPOSTA_POST.json()}</arg>
 <arg>$..id</arg>
 <doc>Get Value From JSON using JSONPath</doc>
-<msg timestamp="20240224 09:24:58.996" level="INFO">${ID_NEW_USER} = [11]</msg>
-<status status="PASS" starttime="20240224 09:24:58.979" endtime="20240224 09:24:58.996"/>
+<msg timestamp="20240224 13:43:20.360" level="INFO">${ID_NEW_USER} = [11]</msg>
+<status status="PASS" starttime="20240224 13:43:20.315" endtime="20240224 13:43:20.360"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>201</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:24:58.996" endtime="20240224 09:24:58.996"/>
+<status status="PASS" starttime="20240224 13:43:20.361" endtime="20240224 13:43:20.361"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.846" endtime="20240224 09:24:58.996"/>
+<status status="PASS" starttime="20240224 13:43:20.169" endtime="20240224 13:43:20.361"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.846" endtime="20240224 09:24:58.996"/>
+<status status="PASS" starttime="20240224 13:43:20.169" endtime="20240224 13:43:20.361"/>
 </kw>
 <kw name="Then o response deverá conter os dados do body com o novo id criado" library="users">
 <kw name="Validar id cadastrado" library="users">
@@ -523,8 +523,8 @@
 <var>${HEADERS}</var>
 <arg>content-type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20240224 09:24:59.010" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
-<status status="PASS" starttime="20240224 09:24:59.010" endtime="20240224 09:24:59.010"/>
+<msg timestamp="20240224 13:43:20.363" level="INFO">${HEADERS} = {'content-type': 'application/json'}</msg>
+<status status="PASS" starttime="20240224 13:43:20.363" endtime="20240224 13:43:20.363"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA_POST}</var>
@@ -532,14 +532,14 @@
 <arg>${BASE_URL}</arg>
 <arg>json=${PAYLOAD}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:59.149" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.509" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '424', 'Content-Type': 'application/json'} 
  body=b'{"name": "Leanne Graham", "username": "Bret", "email": "Sincere@april.biz", "address": {"street": "Kulas Light", "suite": "Apt. 556", "city": "Gwenborough", "zipcode": "92998-3874", "geo": {"lat": "-37.3159", "lng": "81.1496"}}, "phone": "1-770-736-8031 x56442", "website": "hildegard.org", "company": {"name": "Romaguera-Crona", "catchPhrase": "Multi-layered client-server neural-net", "bs": "harness real-time e-markets"}}' 
  </msg>
-<msg timestamp="20240224 09:24:59.149" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:20.509" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=201, reason=Created 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:59 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '995', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b0487d0c1f84-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '510', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708792999&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=sBfkS%2B%2BVfAhhtcz%2F0KnDviCUx62u7o5gK9AVtOhC27M%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '995', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'https://jsonplaceholder.typicode.com/users//11', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"1fe-Qsp7oomimE9EV84TsN0isej/CCw"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ab8dbe87a85-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Leanne Graham",
   "username": "Bret",
@@ -564,22 +564,22 @@
   "id": 11
 } 
  </msg>
-<msg timestamp="20240224 09:24:59.149" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.010" endtime="20240224 09:24:59.149"/>
+<msg timestamp="20240224 13:43:20.510" level="INFO">${RESPOSTA_POST} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:20.363" endtime="20240224 13:43:20.510"/>
 </kw>
 <kw name="Get Value From Json" library="JSONLibrary">
 <var>${ID_NEW_USER}</var>
 <arg>${RESPOSTA_POST.json()}</arg>
 <arg>$..id</arg>
 <doc>Get Value From JSON using JSONPath</doc>
-<msg timestamp="20240224 09:24:59.164" level="INFO">${ID_NEW_USER} = [11]</msg>
-<status status="PASS" starttime="20240224 09:24:59.149" endtime="20240224 09:24:59.164"/>
+<msg timestamp="20240224 13:43:20.524" level="INFO">${ID_NEW_USER} = [11]</msg>
+<status status="PASS" starttime="20240224 13:43:20.510" endtime="20240224 13:43:20.524"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.010" endtime="20240224 09:24:59.164"/>
+<status status="PASS" starttime="20240224 13:43:20.361" endtime="20240224 13:43:20.524"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.010" endtime="20240224 09:24:59.164"/>
+<status status="PASS" starttime="20240224 13:43:20.361" endtime="20240224 13:43:20.524"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:58.092" endtime="20240224 09:24:59.164"/>
+<status status="PASS" starttime="20240224 13:43:19.647" endtime="20240224 13:43:20.525"/>
 </test>
 <test id="s1-t3" name=" CT03 - Atualizar as informações do usuário (PUT)" line="22">
 <kw name="Create the session" library="base" type="SETUP">
@@ -588,10 +588,10 @@
 <arg>${BASE_URL}</arg>
 <arg>verify=${True}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20240224 09:24:59.164" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20240224 09:24:59.164" endtime="20240224 09:24:59.164"/>
+<msg timestamp="20240224 13:43:20.529" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20240224 13:43:20.528" endtime="20240224 13:43:20.529"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.164" endtime="20240224 09:24:59.164"/>
+<status status="PASS" starttime="20240224 13:43:20.527" endtime="20240224 13:43:20.529"/>
 </kw>
 <kw name="Atualizar um usuário PUT" library="users">
 <kw name="PUT On Session" library="RequestsLibrary">
@@ -600,14 +600,14 @@
 <arg>${BASE_URL}/${3}</arg>
 <arg>json=${PAYLOAD_2}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:59.407" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:20.989" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
  path_url=/users//3 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '427', 'Content-Type': 'application/json'} 
  body=b'{"name": "Teste Bauch", "username": "Teste", "email": "Nathan@yesenia.net", "address": {"street": "Douglas Extension", "suite": "Suite 847", "city": "McKenziehaven", "zipcode": "59590-4157", "geo": {"lat": "-68.6102", "lng": "-47.0653"}}, "phone": "1-463-123-4447", "website": "ramiro.info", "company": {"name": "Romaguera-Jacobson", "catchPhrase": "Face to face bifurcated interface", "bs": "e-enable strategic applications"}}' 
  </msg>
-<msg timestamp="20240224 09:24:59.407" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:20.989" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:59 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '994', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b049fe8b118a-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:20 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '994', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92aba6ec47a35-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Teste Bauch",
   "username": "Teste",
@@ -632,16 +632,16 @@
   "id": 3
 } 
  </msg>
-<msg timestamp="20240224 09:24:59.407" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.164" endtime="20240224 09:24:59.407"/>
+<msg timestamp="20240224 13:43:20.989" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:20.529" endtime="20240224 13:43:20.989"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_PUT}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:24:59.407" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.407" endtime="20240224 09:24:59.407"/>
+<msg timestamp="20240224 13:43:20.989" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:20.989" endtime="20240224 13:43:20.989"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.164" endtime="20240224 09:24:59.407"/>
+<status status="PASS" starttime="20240224 13:43:20.529" endtime="20240224 13:43:20.989"/>
 </kw>
 <kw name="Given que a solicitação PUT seja feita" library="users">
 <kw name="Atualizar um usuário PUT" library="users">
@@ -651,14 +651,14 @@
 <arg>${BASE_URL}/${3}</arg>
 <arg>json=${PAYLOAD_2}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:59.554" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.133" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
  path_url=/users//3 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '427', 'Content-Type': 'application/json'} 
  body=b'{"name": "Teste Bauch", "username": "Teste", "email": "Nathan@yesenia.net", "address": {"street": "Douglas Extension", "suite": "Suite 847", "city": "McKenziehaven", "zipcode": "59590-4157", "geo": {"lat": "-68.6102", "lng": "-47.0653"}}, "phone": "1-463-123-4447", "website": "ramiro.info", "company": {"name": "Romaguera-Jacobson", "catchPhrase": "Face to face bifurcated interface", "bs": "e-enable strategic applications"}}' 
  </msg>
-<msg timestamp="20240224 09:24:59.554" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.133" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:59 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '993', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b04aff73118a-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:20 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '993', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92abcc9017a35-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Teste Bauch",
   "username": "Teste",
@@ -683,18 +683,18 @@
   "id": 3
 } 
  </msg>
-<msg timestamp="20240224 09:24:59.554" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.407" endtime="20240224 09:24:59.554"/>
+<msg timestamp="20240224 13:43:21.133" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:20.989" endtime="20240224 13:43:21.133"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_PUT}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:24:59.555" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.554" endtime="20240224 09:24:59.555"/>
+<msg timestamp="20240224 13:43:21.133" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.133" endtime="20240224 13:43:21.133"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.407" endtime="20240224 09:24:59.555"/>
+<status status="PASS" starttime="20240224 13:43:20.989" endtime="20240224 13:43:21.133"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.407" endtime="20240224 09:24:59.555"/>
+<status status="PASS" starttime="20240224 13:43:20.989" endtime="20240224 13:43:21.133"/>
 </kw>
 <kw name="And seja atualizado alguma informação no body" library="users">
 <kw name="Atualizar um usuário PUT" library="users">
@@ -704,14 +704,14 @@
 <arg>${BASE_URL}/${3}</arg>
 <arg>json=${PAYLOAD_2}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:59.696" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.284" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
  path_url=/users//3 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '427', 'Content-Type': 'application/json'} 
  body=b'{"name": "Teste Bauch", "username": "Teste", "email": "Nathan@yesenia.net", "address": {"street": "Douglas Extension", "suite": "Suite 847", "city": "McKenziehaven", "zipcode": "59590-4157", "geo": {"lat": "-68.6102", "lng": "-47.0653"}}, "phone": "1-463-123-4447", "website": "ramiro.info", "company": {"name": "Romaguera-Jacobson", "catchPhrase": "Face to face bifurcated interface", "bs": "e-enable strategic applications"}}' 
  </msg>
-<msg timestamp="20240224 09:24:59.696" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.284" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:59 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '992', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b04beffd118a-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:20 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '992', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92abdba357a35-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Teste Bauch",
   "username": "Teste",
@@ -736,18 +736,18 @@
   "id": 3
 } 
  </msg>
-<msg timestamp="20240224 09:24:59.696" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.556" endtime="20240224 09:24:59.696"/>
+<msg timestamp="20240224 13:43:21.284" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.133" endtime="20240224 13:43:21.284"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_PUT}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:24:59.696" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.696" endtime="20240224 09:24:59.696"/>
+<msg timestamp="20240224 13:43:21.284" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.284" endtime="20240224 13:43:21.284"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.556" endtime="20240224 09:24:59.696"/>
+<status status="PASS" starttime="20240224 13:43:21.133" endtime="20240224 13:43:21.284"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.555" endtime="20240224 09:24:59.696"/>
+<status status="PASS" starttime="20240224 13:43:21.133" endtime="20240224 13:43:21.284"/>
 </kw>
 <kw name="When obter o código de status do PUT da solicitação = 200" library="users">
 <kw name="Validar status code PUT" library="users">
@@ -757,14 +757,14 @@
 <arg>${BASE_URL}/${3}</arg>
 <arg>json=${PAYLOAD_2}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:24:59.854" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.434" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
  path_url=/users//3 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '427', 'Content-Type': 'application/json'} 
  body=b'{"name": "Teste Bauch", "username": "Teste", "email": "Nathan@yesenia.net", "address": {"street": "Douglas Extension", "suite": "Suite 847", "city": "McKenziehaven", "zipcode": "59590-4157", "geo": {"lat": "-68.6102", "lng": "-47.0653"}}, "phone": "1-463-123-4447", "website": "ramiro.info", "company": {"name": "Romaguera-Jacobson", "catchPhrase": "Face to face bifurcated interface", "bs": "e-enable strategic applications"}}' 
  </msg>
-<msg timestamp="20240224 09:24:59.854" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.434" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:59 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '991', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b04cd85f118a-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:20 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '991', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92abe9b1e7a35-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Teste Bauch",
   "username": "Teste",
@@ -789,23 +789,23 @@
   "id": 3
 } 
  </msg>
-<msg timestamp="20240224 09:24:59.854" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.696" endtime="20240224 09:24:59.854"/>
+<msg timestamp="20240224 13:43:21.434" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.284" endtime="20240224 13:43:21.434"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_PUT}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:24:59.854" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.854" endtime="20240224 09:24:59.854"/>
+<msg timestamp="20240224 13:43:21.434" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.434" endtime="20240224 13:43:21.434"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:24:59.855" endtime="20240224 09:24:59.855"/>
+<status status="PASS" starttime="20240224 13:43:21.434" endtime="20240224 13:43:21.434"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.696" endtime="20240224 09:24:59.855"/>
+<status status="PASS" starttime="20240224 13:43:21.284" endtime="20240224 13:43:21.434"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.696" endtime="20240224 09:24:59.855"/>
+<status status="PASS" starttime="20240224 13:43:21.284" endtime="20240224 13:43:21.434"/>
 </kw>
 <kw name="Then o response deverá conter os dados atualizados" library="users">
 <kw name="Validar se alteração consta no response" library="users">
@@ -815,14 +815,14 @@
 <arg>${BASE_URL}/${3}</arg>
 <arg>json=${PAYLOAD_2}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.000" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.584" level="INFO">PUT Request : url=https://jsonplaceholder.typicode.com/users//3 
  path_url=/users//3 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '427', 'Content-Type': 'application/json'} 
  body=b'{"name": "Teste Bauch", "username": "Teste", "email": "Nathan@yesenia.net", "address": {"street": "Douglas Extension", "suite": "Suite 847", "city": "McKenziehaven", "zipcode": "59590-4157", "geo": {"lat": "-68.6102", "lng": "-47.0653"}}, "phone": "1-463-123-4447", "website": "ramiro.info", "company": {"name": "Romaguera-Jacobson", "catchPhrase": "Face to face bifurcated interface", "bs": "e-enable strategic applications"}}' 
  </msg>
-<msg timestamp="20240224 09:25:00.000" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
+<msg timestamp="20240224 13:43:21.584" level="INFO">PUT Response : url=https://jsonplaceholder.typicode.com/users//3 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:24:59 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777499&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2Ft5PbSltIH6Yahy0%2Fq1lH22i4Ockc9epgkvXpmcJ8jc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '990', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b04dc92e118a-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793000&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=0x7yQ%2BoxNFv6eVpLvUbcRCsMh2XhomdpmBzhxEM0Uvw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '990', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"200-uLkVMsn6/tmZUq23Zu9q3ZttGJI"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92abf8bfa7a35-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "name": "Teste Bauch",
   "username": "Teste",
@@ -847,31 +847,31 @@
   "id": 3
 } 
  </msg>
-<msg timestamp="20240224 09:25:00.000" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:24:59.856" endtime="20240224 09:25:00.000"/>
+<msg timestamp="20240224 13:43:21.584" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.434" endtime="20240224 13:43:21.584"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_PUT}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:25:00.001" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.000" endtime="20240224 09:25:00.001"/>
+<msg timestamp="20240224 13:43:21.586" level="INFO">${RESPOSTA_PUT} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.584" endtime="20240224 13:43:21.586"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:25:00.001" endtime="20240224 09:25:00.001"/>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:21.586"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>Teste Bauch</arg>
 <arg>${RESPOSTA_PUT.json()}[name]</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20240224 09:25:00.001" endtime="20240224 09:25:00.001"/>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:21.586"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.856" endtime="20240224 09:25:00.001"/>
+<status status="PASS" starttime="20240224 13:43:21.434" endtime="20240224 13:43:21.586"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.855" endtime="20240224 09:25:00.001"/>
+<status status="PASS" starttime="20240224 13:43:21.434" endtime="20240224 13:43:21.586"/>
 </kw>
-<status status="PASS" starttime="20240224 09:24:59.164" endtime="20240224 09:25:00.003"/>
+<status status="PASS" starttime="20240224 13:43:20.527" endtime="20240224 13:43:21.586"/>
 </test>
 <test id="s1-t4" name=" CT04 - Deletar o cadastro de um usuário (DELETE)" line="29">
 <kw name="Create the session" library="base" type="SETUP">
@@ -880,10 +880,10 @@
 <arg>${BASE_URL}</arg>
 <arg>verify=${True}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20240224 09:25:00.005" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20240224 09:25:00.005" endtime="20240224 09:25:00.005"/>
+<msg timestamp="20240224 13:43:21.586" level="INFO">Creating Session using : alias=pb, url=https://jsonplaceholder.typicode.com/users/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:21.586"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.005" endtime="20240224 09:25:00.005"/>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:21.586"/>
 </kw>
 <kw name="Deletar um usuário" library="users">
 <kw name="GET On Session" library="RequestsLibrary">
@@ -891,14 +891,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.098" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:21.703" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.098" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:21.703" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4117', 'Server': 'cloudflare', 'CF-RAY': '85a7b04f1af77a67-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19618', 'Server': 'cloudflare', 'CF-RAY': '85a92ac0ff2e6443-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "id": 1,
@@ -1132,34 +1132,34 @@
   }
 ] 
  </msg>
-<msg timestamp="20240224 09:25:00.099" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.005" endtime="20240224 09:25:00.099"/>
+<msg timestamp="20240224 13:43:21.703" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:21.703"/>
 </kw>
 <kw name="DELETE On Session" library="RequestsLibrary">
 <var>${RESPOSTA_DEL}</var>
 <arg>pb</arg>
 <arg>${BASE_URL}${4}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.245" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:21.833" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
  path_url=/users/4 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.245" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:21.833" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '989', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b04f4b117a67-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '989', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ac12f7d6443-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={} 
  </msg>
-<msg timestamp="20240224 09:25:00.245" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.099" endtime="20240224 09:25:00.245"/>
+<msg timestamp="20240224 13:43:21.833" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.703" endtime="20240224 13:43:21.833"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_DEL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:25:00.245" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.245" endtime="20240224 09:25:00.245"/>
+<msg timestamp="20240224 13:43:21.833" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.833" endtime="20240224 13:43:21.833"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.005" endtime="20240224 09:25:00.245"/>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:21.833"/>
 </kw>
 <kw name="Given que a solicitação DELETE seja feita" library="users">
 <kw name="Deletar um usuário" library="users">
@@ -1168,14 +1168,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.279" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:21.865" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.279" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:21.865" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4117', 'Server': 'cloudflare', 'CF-RAY': '85a7b0503ba67a67-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19618', 'Server': 'cloudflare', 'CF-RAY': '85a92ac2186f6443-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "id": 1,
@@ -1409,36 +1409,36 @@
   }
 ] 
  </msg>
-<msg timestamp="20240224 09:25:00.279" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.245" endtime="20240224 09:25:00.279"/>
+<msg timestamp="20240224 13:43:21.865" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.849" endtime="20240224 13:43:21.865"/>
 </kw>
 <kw name="DELETE On Session" library="RequestsLibrary">
 <var>${RESPOSTA_DEL}</var>
 <arg>pb</arg>
 <arg>${BASE_URL}${4}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.423" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:22.019" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
  path_url=/users/4 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.423" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:22.019" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '988', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b0506bcd7a67-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '988', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ac2489a6443-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={} 
  </msg>
-<msg timestamp="20240224 09:25:00.423" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.279" endtime="20240224 09:25:00.423"/>
+<msg timestamp="20240224 13:43:22.019" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:21.865" endtime="20240224 13:43:22.019"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_DEL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:25:00.426" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.426" endtime="20240224 09:25:00.426"/>
+<msg timestamp="20240224 13:43:22.019" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.019" endtime="20240224 13:43:22.019"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.245" endtime="20240224 09:25:00.426"/>
+<status status="PASS" starttime="20240224 13:43:21.849" endtime="20240224 13:43:22.019"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.245" endtime="20240224 09:25:00.426"/>
+<status status="PASS" starttime="20240224 13:43:21.833" endtime="20240224 13:43:22.019"/>
 </kw>
 <kw name="When obter o código de status do DELETE da solicitação = 200" library="users">
 <kw name="Validar status code DELETE" library="users">
@@ -1447,14 +1447,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.464" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:22.047" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.464" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:22.047" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4117', 'Server': 'cloudflare', 'CF-RAY': '85a7b0515c527a67-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19618', 'Server': 'cloudflare', 'CF-RAY': '85a92ac329626443-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "id": 1,
@@ -1688,41 +1688,41 @@
   }
 ] 
  </msg>
-<msg timestamp="20240224 09:25:00.464" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.426" endtime="20240224 09:25:00.464"/>
+<msg timestamp="20240224 13:43:22.047" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.019" endtime="20240224 13:43:22.047"/>
 </kw>
 <kw name="DELETE On Session" library="RequestsLibrary">
 <var>${RESPOSTA_DEL}</var>
 <arg>pb</arg>
 <arg>${BASE_URL}${4}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.610" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:22.200" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
  path_url=/users/4 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.610" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:22.200" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '987', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b0519c767a67-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '987', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ac359916443-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={} 
  </msg>
-<msg timestamp="20240224 09:25:00.610" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.464" endtime="20240224 09:25:00.610"/>
+<msg timestamp="20240224 13:43:22.200" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.047" endtime="20240224 13:43:22.200"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_DEL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:25:00.610" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.610" endtime="20240224 09:25:00.610"/>
+<msg timestamp="20240224 13:43:22.200" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.200" endtime="20240224 13:43:22.200"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:25:00.610" endtime="20240224 09:25:00.610"/>
+<status status="PASS" starttime="20240224 13:43:22.200" endtime="20240224 13:43:22.200"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.426" endtime="20240224 09:25:00.610"/>
+<status status="PASS" starttime="20240224 13:43:22.019" endtime="20240224 13:43:22.200"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.426" endtime="20240224 09:25:00.610"/>
+<status status="PASS" starttime="20240224 13:43:22.019" endtime="20240224 13:43:22.200"/>
 </kw>
 <kw name="Then o response deverá conter apenas chaves" library="users">
 <kw name="Validar que msg do response seja chaves" library="users">
@@ -1731,14 +1731,14 @@
 <arg>pb</arg>
 <arg>${BASE_URL}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.663" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:22.251" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/ 
  path_url=/users/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.664" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
+<msg timestamp="20240224 13:43:22.251" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/ 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '4117', 'Server': 'cloudflare', 'CF-RAY': '85a7b0529d077a67-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707950759&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=%2BsbPY08W5zwn6ARGgANaESEksjK98%2F%2BU0wOCFN7wEx0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707950797', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '19618', 'Server': 'cloudflare', 'CF-RAY': '85a92ac44a786443-GIG', 'Content-Encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "id": 1,
@@ -1972,45 +1972,45 @@
   }
 ] 
  </msg>
-<msg timestamp="20240224 09:25:00.664" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.614" endtime="20240224 09:25:00.664"/>
+<msg timestamp="20240224 13:43:22.252" level="INFO">${RESPOSTA_GET} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.200" endtime="20240224 13:43:22.252"/>
 </kw>
 <kw name="DELETE On Session" library="RequestsLibrary">
 <var>${RESPOSTA_DEL}</var>
 <arg>pb</arg>
 <arg>${BASE_URL}${4}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<msg timestamp="20240224 09:25:00.808" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:22.398" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/users/4 
  path_url=/users/4 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20240224 09:25:00.809" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
+<msg timestamp="20240224 13:43:22.398" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/users/4 
  status=200, reason=OK 
- headers={'Date': 'Sat, 24 Feb 2024 12:25:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708777500&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=eQmaArGTBJWQb%2BEkMe8o3SwIXOt04HVKtzFuUDXrNZ8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '986', 'X-Ratelimit-Reset': '1708777532', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a7b052dd227a67-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sat, 24 Feb 2024 16:43:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708793001&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hMAHyI6mwzRfBdEGgy5FsoBlrR2x7IMmwbt7XXWQ8rM%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '986', 'X-Ratelimit-Reset': '1708793012', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '85a92ac49ab16443-GIG', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={} 
  </msg>
-<msg timestamp="20240224 09:25:00.809" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.664" endtime="20240224 09:25:00.809"/>
+<msg timestamp="20240224 13:43:22.398" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.252" endtime="20240224 13:43:22.398"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${RESPOSTA_DEL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20240224 09:25:00.810" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20240224 09:25:00.809" endtime="20240224 09:25:00.810"/>
+<msg timestamp="20240224 13:43:22.398" level="INFO">${RESPOSTA_DEL} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240224 13:43:22.398" endtime="20240224 13:43:22.398"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20240224 09:25:00.810" endtime="20240224 09:25:00.810"/>
+<status status="PASS" starttime="20240224 13:43:22.398" endtime="20240224 13:43:22.398"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.614" endtime="20240224 09:25:00.810"/>
+<status status="PASS" starttime="20240224 13:43:22.200" endtime="20240224 13:43:22.398"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.614" endtime="20240224 09:25:00.810"/>
+<status status="PASS" starttime="20240224 13:43:22.200" endtime="20240224 13:43:22.398"/>
 </kw>
-<status status="PASS" starttime="20240224 09:25:00.003" endtime="20240224 09:25:00.810"/>
+<status status="PASS" starttime="20240224 13:43:21.586" endtime="20240224 13:43:22.398"/>
 </test>
-<status status="PASS" starttime="20240224 09:24:57.453" endtime="20240224 09:25:00.810"/>
+<status status="PASS" starttime="20240224 13:43:18.491" endtime="20240224 13:43:22.398"/>
 </suite>
 <statistics>
 <total>
@@ -2023,6 +2023,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240224 09:24:57.861" level="ERROR">Error in file 'C:\Users\kelvi\OneDrive\Área de Trabalho\casePB\apiTesting\tests\validation_https.robot' on line 3: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
+<msg timestamp="20240224 13:43:19.353" level="ERROR">Error in file 'C:\Users\kelvi\OneDrive\Área de Trabalho\casePB\apiTesting\tests\validation_https.robot' on line 3: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
 </errors>
 </robot>

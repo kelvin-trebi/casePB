@@ -1,0 +1,47 @@
+Imagina que você iniciou em uma equipe com um projeto do Zero. A proposta do projeto é a criação de uma solução
+para realizar compra de imóveis através de sistemas que facilitarão a comunicação de imobiliárias, clientes e bancos. A
+arquitetura está sendo desenhada a partir de solução de microsserviços e WebSites, está sendo mapeado integrações
+com sistemas externos, espera-se volume alto de operação uma vez que o sistema irá operar em todo o território
+Brasileiro, o cliente está bem próximo do projeto para levantamento de requisitos. 
+
+
+
+1.Dado esse cenário, como você iniciaria uma estratégia de teste?
+    1.1 Fazer uma revisão detalhada principalmente dos requisitos do projeto, sendo funcionais ou não.
+        1.2 Compreender toda arquiteta proposta, incluindo os microsserviços, as integrações com apis externas e também os componentes do front e backend
+            1.3 Indentificaria os casos de testes, garantindo a cobertura total do projeto, sendo assim separando as melhores técnicas necessárias
+                1.4 Estabelecer um ambiente de teste (homolog ou qa), Garantindo que este ambiente reflita o ambiente que será de produção.
+                    1.5 Realizar testes de desempenho, garantir como o sistema se comportará sob carga e lidar com volume esperado das operações
+                        1.6 Testar experiência do usuário: Garantir que a interface esteja intuitiva e fácil de se usar.
+                            1.7 Garantir usabilidade em diferentes dispositivos e navegadores.
+
+
+2.Quais abordagens de teste você consideraria?
+    2.1 Testes de Contrato
+        2.2 Testes de Integração
+            2.3 Testes E2E , Analisar fluxo completo do sistema
+                2.4 Testes de Componentes
+
+3. Como você trabalharia com diferentes tipos/níveis de teste?
+    3.1 Primeiramente criaria um Test Plan, para que nele pudesse separar todos os tipos de testes mapeados que seriam necessários
+        3.2 Iria separar todas ferramentas que esses tipos de testes necessitariam
+             3.3 Ao separar estes tipos, separaria cada testes destinado ao se tipo: Exemplo Testes de APi (irá conter todos os testes de API)
+                3.4 A cada feature entregue, conseguiria mapear um Testes de Regressão, podendo garantir que nada foi afetado.
+
+4. Quais ferramentas você consideraria usar?
+    4.1 Aos cenários que citei acima
+    2.1 = Testes de Contrato *(Postman)
+    2.2 = Testes de Integração * (nestes aqui levantaria a hipótese de automatizar-lo, podendo diminiur a duração dos testes)(Robot)
+    2.3 = Testes E2E, Neste caso várias ferramentas poderiam ser utilizadas para garantir o E2E
+    ...    Ferramenta de manipulação dos dados de sua escolha (DBeaver)
+    ...    Ferramenta de testes de API de sua escolha (Postman + Insomnia)
+    2.4 = Testes de Componentes * (neste aqui separaria todos os componentes do projeto) (Testes Manuais)
+
+5.  Como você se imagina atuando nessa equipe?
+    5.1 Planejamento de Testes: Colaborando com a equipe para entender os requisitos do projeto e indentificar os ct's
+        5.2 Criar testes que cubram diferentes níveis como: desempenho e aceitação do usuário
+    5.3 Execução de Testes Manuais
+        5.4 Realizando testes funcionais que garanta que as funcionalidades do sistema esteja conforme esperado
+            5.5 Realizando testes exploratórios
+    5.6 Automação de Testes
+        5.7 Desenvolver scripts de testes para casos de testes repetitivos e regressão

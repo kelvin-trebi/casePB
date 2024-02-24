@@ -1,7 +1,5 @@
 *** Settings ***
 Documentation       Components File
-
-
 *** Variables ***
 ${URL}              https://the-internet.herokuapp.com/challenging_dom
 ${VALIDATE_HOME}    //h3[contains(.,'Challenging DOM')]
