@@ -38,6 +38,11 @@ robot -d ./logs .\test_horuku.robot
 ```
 robot -d ./logs .\validation_https.robot
 ``` 
+### Arquivos por diretórios (Respostas case 01)
+
+|               Diretório | Arquivos na pasta                                                               |
+| ----------------------: | ----------------------------------------------------------------------------- |
+|                `casesPB` | **config.robot** arquivo que contem os as respostas dos cenários propostos.  |
 
 ### Arquivos por diretórios (WEB)
 
