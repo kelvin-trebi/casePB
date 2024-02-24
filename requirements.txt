@@ -1,0 +1,8 @@
+#SeleniumLibrary
+#JSONLibrary
+#Collections
+#RequestsLibrary
+robotframework-seleniumlibrary==6.1.1
+robotframework-jsonlibrary==0.5
+robotframework-requests==0.9.5
+robotframework-pythonlibcore==4.2.0
