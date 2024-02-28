@@ -16,10 +16,8 @@ pip3 install robotframework
 
 3. Instalar as Libs para funcionamento dos cenários
 ```
-pip3 install robotframework-seleniumlibrary
 pip3 install robotframework-jsonlibrary
 pip3 install robotframework-requests
-pip3 install robotframework-pythonlibcore
 ```
 
 3. Instalar o driver do Google Chrome e adicionar nas variáveis do sistema.
