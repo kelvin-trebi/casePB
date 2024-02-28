@@ -1,9 +1,7 @@
 *** Settings ***
 Library         RequestsLibrary
-Library         Collections
-Library         SeleniumLibrary
-Variables       constants.py
 Library         JSONLibrary
+Variables       constants.py
 
 *** Keywords ***
 Create the session
