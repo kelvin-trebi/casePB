@@ -16,6 +16,7 @@ pip3 install robotframework
 
 3. Instalar as Libs para funcionamento dos cenários
 ```
+pip install --upgrade robotframework-seleniumlibrary
 pip3 install robotframework-jsonlibrary
 pip3 install robotframework-requests
 ```
@@ -63,5 +64,4 @@ robot -d ./logs .\validation_https.robot
 ### Libs utilizadas:
 SeleniumLibrary
 JSONLibrary
-Collections
 RequestsLibrary
